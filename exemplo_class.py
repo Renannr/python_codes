@@ -1,22 +1,22 @@
 class Problema:
+	_tipo = None
+	_tamanho = None
+	_testado = False
+
 	def __init__(self, tamanho, tipo):
-		self.p_tipo = tamanho
-		self.p_tamanho = tipo
-		self.p_testado = False
+		self._tipo = tamanho
+		self._tamanho = tipo
 
 
 	def set_testado(self, testado):
-		self.p_testado = testado
+		self._testado = testado
 
 
 	def get_testado(self):
-		return self.p_testado
+		return self._testado
 
 
 class Teste:
-	def __init__(self):
-		pass
-
 
 	def testar(self, p: Problema):
 		resultado = p
